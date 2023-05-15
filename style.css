@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #262626;
+    width: 100%;
+    height: 100%;
+    /* for centering the items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20em;
+    color: white;
+}
+
+.form {
+    width: 300px;
+    height: 100px;
+    position: relative;
+
+}
+.form input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+
+}
+.form label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: top .5s;
+    padding: 0 5px ;
+}
+.form input:focus ~ label{
+    top: -9px;
+
+    background-color: #262626;
+
+}
+
+
+
+/* .form {
+    position: relative;
+} */
+
+/* .textbox {
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    padding: 10px;
+    color: white;
+} */
+
+/* .form-label {
+    position: absolute;
+    top: 0.6rem;
+    left: 1.4rem;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+} */
+
+/* .textbox:focus {
+    border: 2px solid blueviolet;
+
+} */
+
+/* siblings tag using sibling give the property to the others */
+/* .textbox:focus ~ .form-label,
+.textbox:not(:placeholder-shown) .textbox:not(:focus)~.form-label {
+    top: -0.3rem;
+    left: .5rem;
+    font-size: 10px;
+    background: #262626;
+} */

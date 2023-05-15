@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper #fbc02d yellow darken-2">
+            <a href="#" class="brand-logo">Job Portal</a>
+            <ul id="nav-mobile" class="right ">
+                <li><a class="modal-trigger" href="#modal2">Login</a></li>
+                <li><a class="modal-trigger" href="#modal1">Signup</a></li>
+                <li><a href="collapsible.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- signup modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>SignUp</h4>
+            <form>
+                <input type="email" id="signupEmail" placeholder="email">
+                <input type="password" id="signupPassword" placeholder="Password">
+                <button class="btn waves-effect #fbc02d yellow darken-2" type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <form>
+                <input type="email" id="loginEmail" placeholder="email">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button class="btn waves-effect #fbc02d yellow darken-2" type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+    // Import the functions you need from the SDKs you need
+    // import { initializeApp } from "firebase/app";
+    // import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyB-XFFjnc7WLmSDVSSAZ7gO-RMOii3dO30",
+        authDomain: "reelsapp-83d1e.firebaseapp.com",
+        projectId: "reelsapp-83d1e",
+        storageBucket: "reelsapp-83d1e.appspot.com",
+        messagingSenderId: "205463912180",
+        appId: "1:205463912180:web:0cdefc15cd88ab08efe8a1",
+        measurementId: "G-3MQ2LS3VQW"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
+</html>
